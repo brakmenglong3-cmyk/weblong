@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" 
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    </head>
+    <body>
+        <form>
+            <fieldset>
+                <table cellpadding="10px">
+                   <caption>
+                    <h3>
+                      <i class="fa-solid fa-bed"></i>
+                    ADD NEW ROOM
+                    </caption>
+                    </h3>
+                    <tr>
+                        <td>
+                            <label>Room Number</label>
+                        </td>
+                        <td>
+                            :<input type="text" name="Heng" placeholder="type...">
+                        </td>
+                    </tr>
+                     <tr>
+                        <td>
+                            <label>Room Price</label>
+                        </td>
+                        <td>
+                            :<input type="number" name="Hengprice" min="20" placeholder="type...">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Room Type</label>
+                        </td>
+                        <td>
+                            :<select name="Hengtype">
+                                <option>Single Room</option>
+                                <option>Double Room</option>
+                                <option>Family Room</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr valign="top">
+                        <td>
+                            <label>Room Note</label>
+                        </td>
+                        <td>
+                            :<textarea name="note" cols="50" rows="5">
+                              
+                            </textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Room Status</label>
+                        </td>
+                        <td>
+                            :<select name="txtstatus">
+                                <option>Avilable</option>
+                                <option>Maintenance</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="submit" value="Insert">
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+        </form>
+    </body>
+</html>
