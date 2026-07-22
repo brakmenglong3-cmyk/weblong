@@ -2,99 +2,101 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="../style.css"
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Angkor&family=Archivo+Black&family=Black+Ops+One&display=swap" rel="stylesheet">
         <link rel="stylesheet" 
          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     </head>
-    <body>
-
-    <form>
+    <body class="td">
+        <form>
             <fieldset>
-                <table cellpadding="10" border="1">
-                   <caption>
-                    <h3>
-                      <i class="fa-solid fa-calendar"></i> Create Booking 
-                    </h3>
-                         </caption>
-                         <tr>
-                            <td><label>Customer name</label></td>
-                            <td>:</td>
-                            <td><input type="taxt" placeholder="type here...">
-
-                            </td>
-                         </tr>
-                         <tr>
-                            <td><label>Gender</label></td>
-                            <td>:</td>
-                            <td>
-                                <input type="radio" name="gender" value="famale">Female
-                                <input type="radio" name="gemder" value="male">Male
-                            </td>
-                         </tr>
-                         <tr>
-                            <td><label>ID Card</label></td>
-                            <td>:</td>
-                            <td><input type="file" placeholder="type here..."></td>
-                         </tr>
-                         <tr>
-                            <td><label>Check In</label></td>
-                            <td>:</td>
-                            <td><input type="data"  placeholder="type here..."></td>
-                         </tr>
-                         <tr>
-                            <td><label>Check Out</label></td>
-                            <td>:</td>
-                            <td><input type="data"  placeholder="type here..."></td>
-                         </tr>
-                         <tr>
-                            <td><label>Room Number</label></td>
-                            <td>:</td>
-                            <td>
-                    <select name="roomNumber">
-                    <optgroup label="Single room">
-                        <option>101</option>
-                        <option>102</option>
-                        <option>103</option>
-                        <option>104</option>
-                    </optgroup>
-                    <optgroup label="Double room">
-                        <option>201</option>
-                        <option>202</option>
-                        <option>203</option>
-                        <option>204</option>
-                    </optgroup>
-                    <optgroup label="Family Room">
-                        <option>301</option>
-                        <option>302</option>
-                        <option>303</option>
-                        <option>304</option>
-                    </optgroup>
-                    </select>  
-                    
-                    </td>  
-                </tr>
-                <tr>
-                    <td>
-                        <label>Note</label>
-                    </td> 
-                    <td>:</td>
-                    <td>
-                        <texarea name="note" placeholder="Type here..." row="5" cols="30"></texarea>
-                    </td>     
-                            </td>
-                         </tr>
-                         <tr>
-                            <td></td>
-                            <td></td>
-                            <td>
-                                <input type="submit" value="Create">
-                                <input type="reset" value="clear">
-                            </td>
-                         </tr>
+                <table cellpadding="10">
+                    <caption class="caption">
+                        <h3>
+                            <i class="fa-solid fa-calendar">
+                            </i> Create Booking
+                        </h3>
+                    </caption>
+                    <tr>
+                        <td><label>Customer Name</label></td>
+                        <td>:</td>
+                        <td><input type="text" placeholder="Type here..." name="customerName"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Gender</label></td>
+                        <td>:</td>
+                        <td>
+                            <input type="radio" name="gender" value="female">Female 
+                            <input type="radio" name="gender" value="male">Male
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label>Tel</label></td>
+                        <td>:</td>
+                        <td><input type="text" placeholder="Type here..." name="tel"></td>
+                    </tr>
+                    <tr>
+                        <td><label>ID Card</label></td>
+                        <td>:</td>
+                        <td><input type="file" placeholder="Type here..." name="idCard"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Check In</label></td>
+                        <td>:</td>
+                        <td><input type="date" name="checkIn"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Check Out</label></td>
+                        <td>:</td>
+                        <td><input type="date" name="checkOut"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Room Number</label></td>
+                        <td>:</td>
+                        <td>
+                            <select name="roomNumber">
+                            <optgroup label="Single Room">
+                                <option>101</option>
+                                <option>102</option>
+                                <option>103</option>
+                                <option>104</option>
+                            </optgroup>
+                            <optgroup label="Double Room">
+                                <option>201</option>
+                                <option>202</option>
+                                <option>203</option>
+                                <option>204</option>
+                            </optgroup>
+                            <optgroup label="Family Room">
+                                <option>301</option>
+                                <option>302</option>
+                                <option>303</option>
+                                <option>304</option>
+                            </optgroup>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Note</label>
+                        </td>
+                        <td>:</td>
+                        <td>
+                            <textarea name="note" placeholder="Type here..." rows="5" cols="30"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <input type="submit" value="Create">
+                            <input type="reset" value="Clear">
+                        </td>
+                    </tr>
                 </table>
             </fieldset>
-    </form>
+        </form>
     </body>
-
-                    
 </html>
